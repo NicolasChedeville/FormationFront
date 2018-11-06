@@ -1,0 +1,74 @@
+/* ----------------------------
+    --- Layout | Mise en page
+-------------------------------
+
+    1 - Je souhaite définir la largeur de ma page à 960px
+    2 - Je souhaite que mon contenu soit centré au milieu
+    3 - Le fond doit être de couleur blanche
+    4 - Je souhaite rajouter une marge top/bottom de 40px
+    5 - Avec la propriété border-radius, ajoutez un arrondi de 5px
+    6 - Grâce à box-shadow, ajoutez une ombre légère autour du "main"
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem équivaut à 10px 
+        ou font-size: 100%; 1rem => 16px
+    */
+}
+
+body {
+    background: url("../img/background-min-2.jpg");
+    background-size: cover;
+    // cover pour qui l'image prenne toute la place disponible
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: map-get($fonts-size, h1);
+}
+
+h2 {
+    font-size: map-get($fonts-size, h2);
+}
+
+h3 {
+    font-size: map-get($fonts-size, h3);
+}
+
+.page {
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+    &.top {
+        width: 100%;
+        margin-top: 4rem;
+        background-color: #e6e6e5e3;
+        /* border-radius ajoute un arrondi à mon élément */
+        border-radius: 1.5rem;
+        box-shadow: 4px 4px 6px #4d3d24;
+        /* overflow avec la valeur hidden, va cacher tous les éléments qui dépassent de la balise */
+        overflow: hidden;
+    }
+    &.content {
+        background-color: #e6e6e5e3;
+        /* border-radius ajoute un arrondi à mon élément */
+        border-radius: 1.5rem;
+        box-shadow: 4px 4px 6px #4d3d24;
+        /* overflow avec la valeur hidden, va cacher tous les éléments qui dépassent de la balise */
+        overflow: hidden;
+    }
+    &.footer {
+        margin-bottom: 1rem;
+        width: 100%;
+        overflow: hidden;
+    }
+}

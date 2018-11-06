@@ -1,0 +1,12 @@
+// importation des poilces google fonts
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script|Roboto+Condensed|Cantarell');
+// importation des variables
+@import 'helpers/variables';
+// importation de la base normalisé
+@import 'base/base';
+// importation du layout, structure principal
+@import 'layouts/layouts';
+@import 'components/header';
+@import 'components/navigation';
+@import 'pages/index';
+@import 'components/footer';

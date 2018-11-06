@@ -1,0 +1,38 @@
+/* -----------------------------------------------------
+    --- Navigation | Mise en page de la balise "<nav>"
+-------------------------------------------------------*/
+
+nav {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: solid;
+    border-top: solid;
+    border-width: 0.5rem;
+    border-color: $color-primary;
+    // @include linear-gradient();
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline;
+        list-style-type: none;
+        margin: 0 2rem;
+        &.current a {
+            color: $color-primary;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: $ff-primary;
+        text-transform: uppercase;
+        font-size: $fs-largest;
+        // font-style: bold;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

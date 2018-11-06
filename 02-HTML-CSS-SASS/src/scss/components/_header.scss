@@ -1,0 +1,33 @@
+/* ------------------------------------------------
+    --- Header | Mise en page de la balise "<nav>"
+---------------------------------------------------
+
+    1 - Tous les liens sont en noir
+    2 - Les liens ne sont pas souligné
+    3 - Ils sont affichés en ligne grâce à la propriété "display"
+    4 - Ils sont centré sur la page
+    5 - Vous pouvez attribuer une couleur au passage de la souris (hover).
+    6 - Pareil pour le ".current"
+    7 - Vous utiliserez une police différente. Par ex. Roboto Condensed
+
+importation de la police Roboto Condensed */
+
+header {
+    width: 100%;
+    height: 40rem;
+    background: url("../img/fond-header.jpg");
+    position: relative;
+    h1 {
+        position: absolute;
+        bottom: 10rem;
+        left: 6rem;
+        font-family: $ff-primary;
+        color: #e4e4e4;
+        font-weight: normal;
+        font-size: 5rem;
+        span {
+            font-family: $ff-caligraphy;
+            font-size: 6rem;
+        }
+    }
+}

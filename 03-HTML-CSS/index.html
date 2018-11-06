@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- La balise "html" contient l'ensemble de la page. -->
+<html lang="fr">
+<!-- La balise "head" contient l'entête de ma page. -->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Permet d'initialiser le zoom des navigateur à 100% utili pour le RWWD -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bloquer la compatibilité IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- J'importe ma feuille de style css compilé en scss-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+    <title>Atelier 03 HTML et CSS et SASS</title>
+</head>
+<!-- La balise "body" contient le corp de ma page. -->
+
+<body>
+    <div class="page top">
+        <header>
+            <div class="accroche">
+                <p>Venez découvrir mon univer photographique</p>
+            </div>
+            <!-- En-tête du site -->
+            <div class="nav-customer">
+                <p><i class="fas fa-camera"></i> Espase Clients : <a href="#connexion">Connexion</a> | <a href="#Inscription">Inscription</a></p>
+            </div>
+            <a href="index.html" title="logo du site">
+                <h1>Nicolas <span>Chédeville</span></h1>
+            </a>
+
+        </header>
+        <!-- Emmet : nav>ul>li*3>a[href=#]{Lien $$} -->
+        <!-- Menu du site -->
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#photos">Réalisations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- page top -->
+    <!-- Prjecteur (slider) -->
+    <div id="projecteur">
+        <img src="./dist/img/projecteur.jpg" alt="image projecteur" title="image projecteur" />
+    </div>
+    <div class="page content">
+        <!-- Contenu du site -->
+        <section>
+            <h1>Week-end en Normandie</h1>
+            <aside>
+                <img src="./dist/img/mont-st-michel.jpg" alt="Photo" title="Photo de l'article" />
+                <img src="./dist/img/ciel-etoile.jpg" alt="Photo" title="Photo de l'article" />
+            </aside>
+            <article>
+                <p>Pendant ce week-end en Normandie je suis allé au <strong>Gué de l'Épine</strong> pour faire des photos du Mont St Michel au moment du couché de soleil. <i class="fas fa-camera"></i><br>
+                </p>
+                <p>
+                    <strong>Le Gué de l'Épine</strong>
+                </p>
+                <p>Dans l'estuaire de la Sélune, il offre une vue rasante sur la baie du Mont-Saint-Michel. Le mont Saint-Michel émerge des herbus où paissent les moutons de prés salés.<br> La zone est en effet recouverte par la mer lors des grandes marées;
+                    on peut y observer le mascaret en période favorable.
+                </p>
+            </article>
+            <div class="partenaires">
+                <h2>Partenaires</h2>
+                <a href="#"><img src="./dist/img/canon-logo.png" alt="logo Canon" /></a>
+                <a href="#"><img src="./dist/img/nikon-logo.png" alt="logo Nikon" /></a>
+                <a href="#"><img src="./dist/img/sony-alpha.png" alt="logo Sony Alpha" /></a>
+                <a href="#"><img src="./dist/img/olympus-logo.png" alt="logo Olympus" /></a>
+            </div>
+            <!-- Alternative pour les partenaires avec des ul li-->
+            <!-- <section>
+                <h2>Partenaires</h2>
+                <ul>
+                    <li>
+                        <a href="#"><img src="./dist/img/canon-logo.png" alt="logo Canon" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./dist/img/nikon-logo.png" alt="logo Nikon" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./dist/img/sony-alpha.png" alt="logo Sony Alpha" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./dist/img/olympus-logo.png" alt="logo Olympus" /></a>
+                    </li>
+                </ul>
+            </section> -->
+        </section>
+    </div>
+    <!-- Pied de page -->
+    <footer>
+        <div class="page footer">
+            <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1859.1759755569808!2d1.9868043329582414!3d48.776699552587!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1537794547580" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+            <section>
+                <form name="NomDuFormaulaire" action="FichierChargerDuTraitementDesDonnees.php" method="post">
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <input type="email" placeholder="Saisissez votre email.">
+                        <input type="text" placeholder="Saisissez votre prenom.">
+                        <input type="text" placeholder="Saisissez votre nom.">
+                        <input type="submit" value="M'inscrire">
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <h3>Contact</h3>
+                <address>
+                    <p><strong>Nicolas Chédeville</strong><br> 7,Rue Auguste Renoir<br> 78390 Bois D'Arcy<br>
+                        <a href="mailto:nicolas.chedeville@free.fr">Envoyez-moi un e-mail !</a><br>
+                        <!-- Et retrouvez moi sur les réseaux sociaux :) -->
+                    </p>
+                </address>
+                <div>
+                    <a href="https://www.facebook.com" target="_blank"><img src="./dist/img/icons/64x64px/facebook.png" alt="Logo Facebook" title="Logo Facebook" /></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="./dist/img/icons/64x64px/instagram.png" alt="Logo Instagram" title="Logo Instagram" /></a>
+                    <a href="https://www.flickr.com/" target="_blank"><img src="./dist/img/icons/64x64px/flickr.png" alt="Logo Flickr" title="Logo Flickr" /></a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

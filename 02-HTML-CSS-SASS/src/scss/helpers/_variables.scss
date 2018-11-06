@@ -1,0 +1,28 @@
+/* ---------------------------------------------
+|       Déclarer une variable en SASS
+|   NB : C'est moi qui choisi la convention pour
+|   nommer les variables
+|           -----------------------------
+|   Je peux grace à la fonction "lighten" obtenir
+|   plusieurs variations de couleurs plus claire.
+|          ------------------------------   
+|   La fonction "darken" me permet de faire la
+|   même chose mais en sens inverse.
+------------------------------------------------*/
+
+$color-primary:#794d3c;
+$color-primary-dark: darken($color-primary, 15%);
+// Famille des polices
+$ff-caligraphy:'Pinyon Script',
+cursive;
+$ff-primary: 'Roboto Condensed',
+sans-serif;
+$ff-secondary: Arial,
+Helvetica,
+sans-serif;
+// Taille des polices
+$fs-largest:3rem;
+$fs-lage:2rem;
+$fs-base:1.6rem;
+$fs-small:1.5rem;
+$fs-smallest:1.4rem;

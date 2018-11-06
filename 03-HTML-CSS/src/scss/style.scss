@@ -1,0 +1,54 @@
+/* ------------------------------------------------
+|      ~ Importation des poilces google fonts ~
+---------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script|Roboto+Condensed|Cantarell');
+
+/* ------------------------------------------------
+|            ~ Importation des variables ~
+--------------------------------------------------*/
+
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
+/* -----------------------------------------------
+|        ~ Importation de la base normalisé ~
+--------------------------------------------------*/
+
+@import 'base/base';
+
+/* ------------------------------------------------
+|             ~ Importation du layout ~
+--------------------------------------------------*/
+
+@import 'layouts/layouts';
+
+/* ------------------------------------------------
+|             ~ Importation du header ~
+--------------------------------------------------*/
+
+@import 'components/header';
+
+/* ------------------------------------------------
+|          ~ Importation de la navigation ~
+--------------------------------------------------*/
+
+@import 'components/navigation';
+
+/* ------------------------------------------------
+|          ~ Importation du projecteur ~
+--------------------------------------------------*/
+
+@import 'components/projecteur';
+
+/* ------------------------------------------------
+|       ~ Importation du contenu de la page ~
+--------------------------------------------------*/
+
+@import 'pages/index';
+
+/* ------------------------------------------------
+|           ~ Importation du Footer ~
+--------------------------------------------------*/
+
+@import 'components/footer';
