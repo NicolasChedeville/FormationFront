@@ -1,0 +1,113 @@
+.choix-langue {
+    float: left;
+    width: 40%;
+    // text-align: center;
+    font-family: map-get($fonts, arial);
+    font-size: map-get($fonts-size, base);
+    transition: 0.5s ease-in-out;
+    line-height: 5rem;
+    p {
+        float: left;
+        text-transform: uppercase;
+        margin: 0 2rem 0 16rem;
+    }
+    .fr {
+        display: block;
+        margin: 1.4rem .2rem 0 .2rem;
+        width: 30px;
+        float: left;
+        height: 20px;
+        text-indent: -9000px;
+        background: url(../img/drapeaux.png) -70px 4px no-repeat;
+        &:hover {
+            background: url(../img/drapeaux.png) -70px 0px no-repeat;
+        }
+    }
+    .en {
+        display: block;
+        margin: 1.4rem .2rem 0 .2rem;
+        width: 30px;
+        float: left;
+        height: 20px;
+        text-indent: -9000px;
+        background: url(../img/drapeaux.png) -105px 4px no-repeat;
+        &:hover {
+            background: url(../img/drapeaux.png) -105px 0px no-repeat;
+        }
+    }
+}
+
+nav {
+    @include linear-gradient( map-get($colors, light), map-get($colors, secondary));
+    &.nav-top {
+        width: 100%;
+        float: left;
+        height: 5rem;
+        box-shadow: 0 2px 8px map-get($colors, dark);
+        ul {
+            float: left;
+            width: 60%;
+            text-align: center;
+            line-height: 5rem;
+        }
+        li {
+            display: inline;
+            list-style-type: none;
+            &.current a {
+                color: map-get($colors, current);
+                text-decoration: underline;
+            }
+            a {
+                color: map-get($colors, dark);
+                font-family: map-get($fonts, roboto);
+                font-size: map-get($fonts-size, base);
+                padding: 0 .5rem;
+            }
+            &:nth-child(3) a {
+                color: map-get($colors, rouge);
+            }
+        }
+    }
+    &.nav-vertical {
+        width: 34rem;
+        border-left: .5rem solid;
+        border-color: map-get($colors, rouge);
+        // @include linear-gradient( map-get($colors, light), map-get($colors, secondary));
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 17rem;
+        img {
+            margin: 2rem 0;
+        }
+        li {
+            list-style-type: none;
+            // background-color:map-get($colors, secondary );
+            @include linear-gradient( map-get($colors, light), map-get($colors, secondary));
+            padding: 1.5rem 0;
+            a {
+                font-family: map-get($fonts, roboto);
+                font-size: map-get($fonts-size, big);
+                text-decoration: none;
+            }
+            &:first-child a {
+                color: map-get($colors, rouge);
+            }
+            &:nth-child(2) a {
+                color: map-get($colors, orange);
+            }
+            &:nth-child(3) a {
+                color: map-get($colors, current);
+            }
+            &:last-child a {
+                color: map-get($colors, vert);
+            }
+            span {
+                color: map-get($colors, dark);
+                font-style: italic;
+                font-size: map-get($fonts-size, small);
+                font-weight: 300;
+            }
+        }
+    }
+}

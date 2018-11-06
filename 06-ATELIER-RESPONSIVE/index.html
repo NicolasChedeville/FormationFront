@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- BOOTSTRAP CSS toujours mettre en premier pour pouvoir le modifier sans ma feuille de style -->
+    <!-- Integrity clé qui permet de recevoir le bon fichier -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Ma feuille de style à mettre toujours après celle de bootstrap sinon c'est écraser -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- Script JS pour les anciens navigateurs et le responsive -->
+    <!-- html5shiv dans le head parce qu'il faut que ça charge avant le code vu que ça sert à adapter pour les vieux navigateurs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <!-- respondJs  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+
+    <!-- TITRE DU SITE -->
+    <title>...</title>
+</head>
+
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <!-- Projecteur -->
+            <div class="col p-0 slider">
+                <img class="img-fluid slider__slide" src="./assets/img/fleur-blanche.jpg" alt="fleur blanche">
+            </div>
+            <!-- fin projecteur (slider) -->
+            <!-- Navigation -->
+            <nav class="col menu">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Accueil</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#NosVideos">Nos Vidéos</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Nos Photos</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Fin de la navigation -->
+        </div>
+        <!-- Nos Videos -->
+        <section id="NosVideos" class="row videos p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md videos__item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/xllEdVYb4s4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md videos__item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/TyJkESHF6Rc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Nos Photos -->
+        <section id="NosPhotos" class="row galerie p-5">
+            <div class="container galerie__container">
+                <div class="row galerie__row">
+                    <div class="col-md-6 order-md-2 galerie__col galerie__description">
+                        <h2 class="galerie__title"><i class="fas fa-camera"></i> Dernier stage photos à Paris</h2>
+                        <p class="c-galerie__text">La premier partie du stage dédié à la photo nocturne ce déroule dans le studio, dans le 10ème arrondissement de Paris<br> Nous avons aborder les aspects techniques nécessaires à maîtriser la prise de vue nocturne : le mode de la
+                            prise de vue, l’exposition, les ISO, la balance des blancs, le traitement en noir et blanc… Le tout illustré part des photos projetées sur un mur blanc et des grands tirages<br>
+                            <br>C’est un stage insolite et très amusant, une soirée différente, l’occasion de découvrir ou re-découvrir la capitale et ses transformations sous une lumière souvent inattendue. Une soirée en compagnie de passionnés de la
+                            photo, un moment agréable pour apprendre et une occasion pour partager ses expériences photographiques…<br>
+                        </p>
+                    </div>
+                    <div class="col-md-6 order-md-1 galerie__col">
+                        <div class="row galerie__row">
+                            <div class="mb-5 col-sm galerie__item">
+                                <img class="img-fluid rounded galerie__img" src="./assets/img/photos/DSC07532.jpg" alt="DSC07532">
+                            </div>
+                            <div class="mb-5 col-sm galerie__item">
+                                <img class="img-fluid rounded galerie__img" src="./assets/img/photos/DSC07545.jpg" alt="DSC07545">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 galerie__col order-md-3">
+                        <div class="row">
+                            <div class="mb-5 mb-md-0 col-sm-6 col-md-3 galerie__item"><img class="img-fluid rounded galerie__img" src="./assets/img/photos/DSC07573.jpg" alt="DSC07573"> </div>
+                            <div class="mb-5 mb-md-0 col-sm-6 col-md-3 galerie__item"><img class="img-fluid rounded galerie__img" src="./assets/img/photos/DSC08508.jpg" alt="DSC08508"></div>
+                            <div class="mb-5 mb-md-0 col-sm-6 col-md-3 galerie__item"><img class="img-fluid rounded galerie__img" src="./assets/img/photos/DSC08530.jpg" alt="DSC08530"></div>
+                            <div class="mb-5 mb-md-0 col-sm-6 col-md-3 galerie__item"><img class="img-fluid rounded galerie__img" src="./assets/img/photos/DSC08537.jpg" alt="DSC08537"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row videos videos--bottom p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md videos__item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/xllEdVYb4s4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md videos__item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/TyJkESHF6Rc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+            <footer class="col text-center p-2 ">
+                © 2018 W3F Trappes Nicolas Chédeville
+            </footer>
+        </div>
+    </main>
+    <!-- On place toujours les fichiers JS avant la fermeture de la balise body (question de rapidité de chargement) -->
+    <!-- jQuery & Popper |  à importer avant le js de Bootstrap parce que bootstrap utilise jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Boostrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

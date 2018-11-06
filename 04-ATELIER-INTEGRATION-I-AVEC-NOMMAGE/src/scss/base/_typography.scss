@@ -1,0 +1,30 @@
+h1, h2, h3 {
+    font-family: $ff-primary;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: $h1;
+}
+
+h2 {
+    font-size: $h2;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+p {
+    font-family: $ff-secondary;
+    font-size: $text--size-small;
+}
+
+a {
+    color: $black;
+    font-family: $ff-secondary;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

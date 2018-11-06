@@ -1,0 +1,15 @@
+.c-header {
+    border-top-left-radius: 1rem;
+    position: relative;
+    z-index: 1;
+    @include linear-gradient($white, $gray--light);
+    @include box-shadow(0px 0px 10px $gray--dark);
+    &__translation {
+        width: auto;
+        float: left;
+    }
+    &__nav {
+        width: auto;
+        float: right;
+    }
+}

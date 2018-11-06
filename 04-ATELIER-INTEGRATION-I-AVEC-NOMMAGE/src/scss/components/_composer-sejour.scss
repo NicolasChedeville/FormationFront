@@ -1,0 +1,16 @@
+.c-composer-sejour {
+    padding: 2rem 0;
+    text-align: center;
+    &__desc {
+        font-family: $ff-secondary;
+        font-size: $text--size-smaller;
+        text-align: center;
+        &--highlight {
+            color: $orange;
+        }
+    }
+    &__button {
+        width: 100%;
+        float: left;
+    }
+}

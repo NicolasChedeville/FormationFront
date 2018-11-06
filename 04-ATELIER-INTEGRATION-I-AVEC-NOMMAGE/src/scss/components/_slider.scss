@@ -1,0 +1,32 @@
+.c-slider {
+    // &__slide {}
+    &__grille {
+        width: 100%;
+        height: 24.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__text {
+        // background: url(../img/grille.png);
+        margin: 0;
+        color: $white;
+        position: absolute;
+        font-size: $text--size-super-large;
+        top: 9.5rem;
+        right: 12rem;
+    }
+    &__nav {
+        width: 34rem;
+        position: absolute;
+        top: 0;
+        left: 17rem;
+        @include linear-gradient($white, $gray--light);
+    }
+}
+
+.l-page-content {
+    .c-slider {
+        &__nav {}
+    }
+}

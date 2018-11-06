@@ -1,0 +1,118 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap*/
+
+.slider__slide {
+    width: 100%;
+    height: 100vh;
+    /* object-fit: cover; permet de ne pas deformer l'image */
+    object-fit: cover;
+}
+
+
+/* -----------------------------------------------
+|               ~  ~ NAVIGATION ~  ~
+--------------------------------------------------*/
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu__list {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.menu__link {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.menu__link:hover {
+    color: #E98829;
+    text-decoration: none;
+}
+
+
+/* -----------------------------------------------
+|            ~  ~ FIN NAVIGATION ~  ~
+--------------------------------------------------*/
+
+
+/* -----------------------------------------------
+|               ~  ~ NOS VIDEOS ~  ~
+--------------------------------------------------*/
+
+.videos {
+    background: url(./img/background-min-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.videos--bottom {
+    background: url(./img/photos/DSC08635.jpg);
+}
+
+.videos__item:first-child {
+    margin-bottom: 3rem;
+}
+
+
+/* -----------------------------------------------
+|               ~  ~ NOS PHOTOS ~  ~
+--------------------------------------------------*/
+
+.galerie__description {
+    font-size: 1.4rem;
+}
+
+.galerie__title {
+    font-size: 2rem;
+}
+
+footer {
+    font-size: 1.6rem;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    .menu__item {
+        display: inline-block;
+        padding: 0 2rem;
+    }
+    .videos__item:first-child {
+        margin-bottom: 0;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    .menu__item {
+        padding: 0 4rem;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}

@@ -1,0 +1,32 @@
+// -- Colors
+$blue: #3060A7;
+$orange: #FE3626;
+$orange--dark: #FE372A;
+$orange--light: #FEBEB9;
+$yellow: #BC8242;
+$green: #08A640;
+$white: #FFFFFF;
+$black: #000000;
+// -- Gray
+$gray: #CCCCCC;
+$gray--light: #BBBBBB;
+$gray--dark: #202020;
+// -- Font Size
+$text--size-super-large:5rem;
+$text--size-largest: 3rem;
+$text--size-larger: 2.5rem;
+$text--size-large: 2rem;
+$text--size-medium: 1.8rem;
+$text--size-default: 1.6rem;
+$text--size-small: 1.4rem;
+$text--size-smaller: 1.3rem;
+$text--size-smallest: 1.2rem;
+$h1: $text--size-largest;
+$h2: $text--size-larger;
+$h3: $text--size-large;
+// -- Font Family
+$ff-primary: 'Roboto Condensed',
+sans-serif;
+$ff-secondary: Arial,
+Helvetica,
+sans-serif;

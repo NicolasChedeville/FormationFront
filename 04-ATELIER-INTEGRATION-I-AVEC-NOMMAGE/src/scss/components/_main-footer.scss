@@ -1,0 +1,21 @@
+.c-main-footer {
+    &__separator {
+        width: 100%;
+        height: 5rem;
+        float: left;
+        background-color: $orange;
+        position: relative;
+    }
+    &__flower {
+        position: absolute;
+        top: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__content {
+        width: 100%;
+        float: left;
+        border-bottom-right-radius: 1rem;
+        @include radial-gradient($white, $orange--light);
+    }
+}

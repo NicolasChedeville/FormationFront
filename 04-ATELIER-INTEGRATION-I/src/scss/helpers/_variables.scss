@@ -1,0 +1,34 @@
+/* ---------------------------------------------
+|       Déclarer une variable en SASS
+|   NB : C'est moi qui choisi la convention pour
+|   nommer les variables
+|           -----------------------------
+|   Je peux grace à la fonction "lighten" obtenir
+|   plusieurs variations de couleurs plus claire.
+|          ------------------------------   
+|   La fonction "darken" me permet de faire la
+|   même chose mais en sens inverse.
+------------------------------------------------*/
+
+
+/* ----------------------------------------- */
+
+
+/*               ~ COLORS ~                  */
+
+
+/* ----------------------------------------- */
+
+$colors: ( background: #151515, current:#3060a7, orange:#bc8242, vert:#08a640, rouge:#fe3224, primary: #dd0613, secondary: #EEEEEE, dark: #202020, light: #FFF);
+
+/* ----------------------------------------- */
+
+
+/*                ~ FONTS ~                  */
+
+
+/* ----------------------------------------- */
+
+$measure: 1.6rem;
+$fonts: ( roboto: 'Roboto Condensed', arial: Arial);
+$fonts-size: ( big: 1.8rem, base: $measure, small: 1.4rem, smaller: 1.3rem, smallest: 1.2rem, h1: 3rem, h2: 2.5rem, h3: 2rem);

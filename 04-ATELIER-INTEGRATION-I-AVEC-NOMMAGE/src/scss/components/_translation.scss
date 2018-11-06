@@ -1,0 +1,39 @@
+.c-translation {
+    line-height: 5rem;
+    &__title {
+        margin: 0 2rem 0 16rem;
+        font-size: $text--size-smallest;
+        text-transform: uppercase;
+        float: left;
+    }
+    &__link {
+        margin: 1.3rem .2rem 0 .2rem;
+        @include transition;
+        // -- Drapeau FR
+        &:nth-child(2) {
+            width: 28px;
+            height: 19px;
+            display: block;
+            float: left;
+            text-indent: -9000px;
+            background: url(../img/drapeaux.png) no-repeat;
+            background-position: -71px 4px;
+            &:hover {
+                background-position: -71px 0px;
+            }
+        }
+        // -- Drapeau EN
+        &:last-child {
+            width: 28px;
+            height: 19px;
+            display: block;
+            float: left;
+            text-indent: -9000px;
+            background: url(../img/drapeaux.png) no-repeat;
+            background-position: -107px 4px;
+            &:hover {
+                background-position: -107px 0px;
+            }
+        }
+    }
+}

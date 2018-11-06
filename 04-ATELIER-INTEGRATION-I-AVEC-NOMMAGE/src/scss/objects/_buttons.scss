@@ -1,0 +1,51 @@
+.o-button {
+    font-family: $ff-primary;
+    font-size: $text--size-medium;
+    color: $white;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    padding: 1rem 2rem;
+    position: relative;
+
+    @include linear-gradient($orange--light, $orange--dark);
+    &--small {
+        font-size: $text--size-small;
+        padding: .5rem 1rem;
+        border-top-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+    &--with-arrows {
+        &:before {
+            @include transition;
+            position: absolute;
+            content: url(../img/fleche.png);
+            left: -17rem;
+            top: 0rem;
+        }
+        &:after {
+            @include transition;
+            position: absolute;
+            transform: scale(-1,1);
+            content: url(../img/fleche.png);
+            right: -17rem;
+            top: 0rem;
+        }
+        &:hover {
+            &:before {
+                left: -16rem;
+            }
+            &:after {
+                right: -16rem;
+            }
+        }
+    }
+    &:hover {
+        text-decoration: inherit;
+        @include linear-gradient($orange--dark, $orange--dark);
+    }
+}
