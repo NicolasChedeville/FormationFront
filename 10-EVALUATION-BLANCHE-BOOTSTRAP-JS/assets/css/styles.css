@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+hr{
+    width: 8rem;
+    height: .5rem;
+}
+.italic{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+.big__title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.red{
+    color: red;
+}
+/*************************************
+                Layout
+**************************************/
+.l-page{
+    position: relative;
+}
+.l-header{
+    background-color:#87509c;
+    padding-top: 4rem;
+}
+.l-accueil{
+    margin: 10rem 0;
+}
+.l-programme{
+    background-color: #17c2a4;
+    padding: 10rem 0;
+}
+.l-inscription{
+    background-color: #3c5499;
+    padding: 10rem 0;
+}
+.l-footer{
+    background-color: #273a71;
+    
+}
+/******************************
+            Navigation
+*******************************/
+.menu__list {
+    text-align: center;
+    margin-top: 1rem;
+}
+.menu__item{
+    /* display: inline-block; */
+    padding:1rem;
+}
+.menu__link {
+    color: white;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.menu__link:hover {
+    background-color: #643a79;
+    color: white;
+    text-decoration: none;
+}
+.c-header{
+    background-color: #87509c;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 3;
+    margin: 0;
+  }
+/***************************
+            Accueil
+****************************/
+.accueil{
+    text-align: center;
+}
+.accueil__text{
+    color: white;
+    font-size: 3rem;
+}
+.accueil__btn{
+    text-align: center;
+}
+.accueil__btn--inscription{
+    background-color: #eb7d4b;
+    font-size: 3rem;
+    border-color: #eb7d4b;
+    padding: 1.5rem 6rem;
+    text-transform: uppercase;
+    margin-top: 3.5rem;
+}
+/*******************************
+            Programme
+********************************/
+
+.c-programme{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.c-programme__text{
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+}
+.c-programme__outil{
+    text-align: center;
+}
+.c-outil__description{
+    padding: 0 4rem;
+}
+.c-outil__img{
+    line-height: 20rem;
+}
+.c-outil__title{
+    color:white;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+.c-outil__text{
+    color:white;
+    font-size: 1.6rem;
+}
+/*******************************
+            Inscription
+********************************/
+.c-inscription{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.c-inscription__text{
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+}
+.c-formulaire__label{
+    font-size: 1.8rem;
+    color: white;
+}
+.c-formulaire__input{
+    background-color: #273a71;
+    border-color: #273a71;
+    font-size: 1.8rem;
+    height: 5rem;
+}
+.c-formulaire__btn{
+    text-align: center;
+}
+.c-formulaire__btn--envoyer{
+    background-color: #30bae7;
+    font-size: 3rem;
+    border: none;
+    width: 30rem;
+    height: 7rem;
+    margin-top: 3.5rem;
+}
+.c-footer{
+    text-align: center;
+}
+.c-footer__text{
+    color:white;
+    font-size: 2.4rem;
+}
+.c-btn{
+    text-align: right;
+    position: absolute;
+    bottom:8rem;
+    right: 0;
+    
+}
+.c-btn--haut{
+    background-color:#1b284e;
+    color:#647bbd;
+    font-size: 1.8rem;
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0 2rem;
+}
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    .menu__item {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+}
