@@ -1,0 +1,22 @@
+.l-page {
+    &__main {
+        background: url(../img/bg-stripes.png) repeat;
+    }
+    &__header {
+        width: 100%;
+        background-color: $bleu;
+    }
+    &__centrage {
+        width: 100rem;
+        margin: 0 auto;
+    }
+    &__content {
+        background-color: $blanc;
+        opacity: 0.98;
+    }
+    &__footer {
+        background-color: $vert;
+        float: left;
+        width: 100%;
+    }
+}

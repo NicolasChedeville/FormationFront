@@ -1,0 +1,123 @@
+.c-titre {
+    position: relative;
+    &__title {
+        height: 20rem;
+        color: $rose-dark;
+        font-size: $text--size-largest;
+        font-family: $ff-secondary;
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+        line-height: 20rem;
+        margin: 0;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 29rem;
+    }
+}
+
+.c-content {
+    background-color: $blanc;
+    box-shadow: .2rem .2rem .5rem $noir;
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+}
+
+.c-bloc {
+    &__title {
+        color: $rose;
+        font-size: $text--size-medium-plus;
+        font-family: $ff-secondary;
+        font-style: italic;
+        font-weight: 800;
+        &--news {
+            color: $rose;
+            font-size: $text--size-default;
+            font-family: $ff-secondary;
+        }
+    }
+    &--icon {
+        padding-right: 1rem;
+    }
+    &__text {
+        font-family: $ff-primary;
+        font-size: $text--size-default;
+        padding: 1rem;
+    }
+    &__img {
+        float: left;
+        width: calc(100% / 4);
+        padding: .5rem;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0;
+        transition: transform .3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__titre-img {
+        position: absolute;
+        background-color: $noir;
+        bottom: 0;
+        left: 0;
+        width: 97%;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: $text--size-default;
+        color: $blanc;
+        text-align: center;
+        margin: 0.5rem;
+        opacity: .80;
+        box-sizing: border-box;
+    }
+    &__map {
+        float: left;
+        width: 60%;
+        box-sizing: border-box;
+    }
+    &:last-child {
+        height: 45rem;
+        padding-bottom: 5rem;
+    }
+    &__article {
+        float: left;
+        width: 40%;
+        box-sizing: border-box;
+        padding-left: 2rem;
+    }
+    &--adresse {
+        color: $rose;
+        font-family: $ff-secondary;
+        font-size: $text--size-default;
+        font-style: italic;
+        line-height: 4rem;
+        font-weight: 800;
+    }
+    &__adresse,
+    &__accroche-mail {
+        margin-top: 0;
+        font-family: $ff-primary;
+        font-size: $text--size-small;
+    }
+    &__mail {
+        width: 15rem;
+        height: 2.5rem;
+        margin-top: 1rem;
+        font-size: $text--size-small;
+        padding-left: 1rem;
+    }
+    &__btn {
+        background-color: $rose-dark;
+        border-radius: .5rem;
+        height: 3rem;
+        box-shadow: none;
+        margin-top: 1rem;
+        padding: .5rem 1rem;
+        border: none;
+        font-size: $text--size-medium;
+        color: $blanc;
+    }
+}

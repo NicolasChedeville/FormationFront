@@ -1,0 +1,16 @@
+.l-page {
+    background: url(../img/background.png);
+    &__centrage {
+        width: 122rem;
+        margin: 0 auto;
+    }
+    &__nav {
+        width: 100%;
+        background-color: $rose-dark;
+    }
+    &__footer {
+        margin-top: 4rem;
+        height: 3rem;
+        background-color: $rose-light;
+    }
+}

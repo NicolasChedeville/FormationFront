@@ -1,0 +1,13 @@
+.c-main-footer {
+    text-align: center;
+    &__title {
+        color: $blanc;
+        font-family: $ff-secondary;
+        font-size: $text--size-super-large;
+    }
+    &__text {
+        font-size: $text--size-medium-plus;
+        font-family: $ff-primary;
+        font-weight: 400;
+    }
+}

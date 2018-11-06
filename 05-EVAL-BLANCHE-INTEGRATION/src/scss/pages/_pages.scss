@@ -1,0 +1,75 @@
+.c-content {
+    width: 100rem;
+    margin: 0 auto;
+    &__title {
+        color: $vert;
+        text-align: center;
+        font-family: $ff-primary;
+        font-size: $text--size-super-large;
+        font-weight: 700;
+        margin: 0;
+        padding: 3rem;
+    }
+    &-bloc {
+        margin: 0 3rem;
+        &__title {
+            background-color: $orange;
+            font-size: $text--size-largest;
+            font-family: $ff-secondary;
+            color: $blanc;
+            margin: 1rem 0;
+            padding: .5rem;
+            &--news {
+                background-color: transparent;
+                font-family: $ff-secondary;
+                font-size: $text--size-larger;
+                color: $bleu;
+                margin-bottom: .5rem;
+            }
+        }
+        &--icon {
+            padding: 0 1rem;
+        }
+        &__article {
+            font-size: $text--size-medium-plus;
+            font-family: $ff-primary;
+            padding-bottom: 2rem;
+            font-weight: 400;
+        }
+        &__map {
+            float: left;
+            width: 65%;
+            box-sizing: border-box;
+        }
+        &:last-child {
+            height: 45rem;
+            padding-bottom: 5rem;
+        }
+        &:last-child &__article {
+            float: left;
+            width: 35%;
+            box-sizing: border-box;
+            padding-left: 2rem;
+        }
+        &--adresse {
+            line-height: 4rem;
+        }
+        &__adresse {
+            margin-top: 0;
+        }
+        &__mail {
+            width: 24rem;
+            margin-top: 1rem;
+        }
+        &__btn {
+            background-color: $blanc;
+            border-radius: 1rem;
+            box-shadow: none;
+            margin-top: 1rem;
+            font-size: $text--size-default;
+        }
+    }
+    &--quote {
+        padding: 0 2rem;
+    }
+}
